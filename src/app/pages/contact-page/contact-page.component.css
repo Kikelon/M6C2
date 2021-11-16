@@ -1,0 +1,13 @@
+#contenedor {
+    margin: 0 auto;
+    width: 900px;
+}
+.input{
+    width:100%;
+    max-width:250px;
+}
+.texto{
+    width:100%;
+    max-width:250px;
+    resize: none;
+}
