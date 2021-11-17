@@ -1,1 +1,21 @@
-<p>about works!</p>
+<div id="contenedor">
+    <h1 id="titulo">Datos del autor</h1>
+    <div id="datos">
+        <div id="contenedor-titulos">
+            <ul class="list-group">
+                <li class="list-group-item">Nombre</li>
+                <li class="list-group-item">Apellidos</li>
+                <li class="list-group-item">Edad</li>
+                <li class="list-group-item">Libro de referencia</li>
+            </ul>
+        </div>
+        <div id="contenedor-datos">
+            <ul class="list-group">
+                <li class="list-group-item"> {{ author.nombre }} </li>
+                <li class="list-group-item"> {{ author.apellido }} </li>
+                <li class="list-group-item"> {{ author.edad }}</li>
+                <li class="list-group-item"> {{ author.obra[1] }}</li>
+            </ul>
+        </div>
+    </div>
+</div>

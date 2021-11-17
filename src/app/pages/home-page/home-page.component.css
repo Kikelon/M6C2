@@ -7,7 +7,7 @@ body {
 
 #contenedor {
     margin: 0 auto;
-    width: 900px;
+    width: 100%;
 }
 #cabecera {
     height: 120px;

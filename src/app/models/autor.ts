@@ -4,6 +4,7 @@ export class Autor {
     public apellido : String;
     public edad : number;
     public biografia : String = "";
+    public obra = [""];
     public email : String = "";
 
     constructor(nombre : String, apellido : String, edad : number){
