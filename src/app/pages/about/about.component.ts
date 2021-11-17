@@ -18,9 +18,8 @@ export class AboutComponent implements OnInit {
   }
   
   public mostrar(datos : HTMLInputElement){
-    console.log("Valor anterior de miAutor.nombre: " + this.miAutor.nombre);
-    this.miAutor.nombre = datos.value;
-    console.log("Valor nuevo de miAutor.nombre: " + this.miAutor.nombre);
+    console.log("Valor de miAutor.nombre: " + this.miAutor.nombre);
+    console.log("Valor del input: " + datos.value);
   }
 
   ngOnInit(): void {
