@@ -8,17 +8,19 @@ import { Autor } from 'src/app/models/autor';
 })
 export class AboutComponent implements OnInit {
 
-  public author : Autor;
-  // private nombre  = ["Henry","Jane","Charles","Herman","Leon"];
-  // private apellido  = ["Fielding","Austen","Dickens","Melville","Tolstoi"];
-  // private edad  = [47,41,58,72,82];
-  // private libro = ["Tom Jones", "Orgullo y prejuicio", "David Copperfield", "Moby Dick", "Guerra y Paz"]
+  public miAutor : Autor;
 
   constructor() {
     
-    this.author = new Autor ("Ken", "Follett", 72);
-    this.author.obra.push("Los pilares de la Tierra");
+    this.miAutor = new Autor ("Ken", "Follett", 72);
+    this.miAutor.obra.push("Los pilares de la Tierra");
 
+  }
+  
+  public mostrar(datos : HTMLInputElement){
+    console.log("Valor anterior de miAutor.nombre: " + this.miAutor.nombre);
+    this.miAutor.nombre = datos.value;
+    console.log("Valor nuevo de miAutor.nombre: " + this.miAutor.nombre);
   }
 
   ngOnInit(): void {

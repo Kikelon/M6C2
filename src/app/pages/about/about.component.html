@@ -11,11 +11,15 @@
         </div>
         <div id="contenedor-datos">
             <ul class="list-group">
-                <li class="list-group-item"> {{ author.nombre }} </li>
-                <li class="list-group-item"> {{ author.apellido }} </li>
-                <li class="list-group-item"> {{ author.edad }}</li>
-                <li class="list-group-item"> {{ author.obra[1] }}</li>
+                <li class="list-group-item"> {{ miAutor.nombre }} </li>
+                <li class="list-group-item"> {{ miAutor.apellido }} </li>
+                <li class="list-group-item"> {{ miAutor.edad }}</li>
+                <li class="list-group-item"> {{ miAutor.obra[1] }}</li>
             </ul>
         </div>
+    </div>
+    <div id="toma-datos">
+        <input type="text" #nombreAutor placeholder="Nombre del autor: {{ miAutor.nombre }}">
+        <button  type="button" id="button" on-click=mostrar(nombreAutor)>Button</button>
     </div>
 </div>

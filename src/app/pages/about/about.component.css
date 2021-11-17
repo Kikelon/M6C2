@@ -19,3 +19,8 @@ h1{
 
     position: relative
 }
+#toma-datos{
+    display : flex;
+    flex-direction: row;
+    justify-content : center;
+}
